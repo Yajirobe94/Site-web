@@ -1,0 +1,111 @@
+/* jusqu'à 1600px */
+@media only screen and (max-width: 1600px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+		font-size: 90%;
+    }
+
+    header {
+        position: relative;
+        z-index: 10;
+    }
+
+    .logoImg {
+        height: 60px;
+        width: auto;
+    }
+
+    .MenuNavigation {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .MenuNavigation a {
+        text-align: center;
+        flex: 1 1 auto;
+        font-size: 16px;
+        padding: 0 5%;
+    }
+
+    .NavFirstChild {
+        border-left: none;
+    }
+
+    .ImageMenu {
+        padding: 5%;
+        position: relative;
+    }
+
+    .TextBlock1, .TextBlock2 {
+        position: static;
+        margin: 10px 0;
+        font-size: 20px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .Description, .Title1, .Collection, footer .infos {
+        margin: 5%;
+        padding: 5% 0;
+    }
+
+    .Collection, .descSpecialites {
+		display: block;
+    }
+
+    .Collection a {
+        flex: 1 0 30%;
+        margin: 5px;
+    }
+	
+    footer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .Collection a div {
+        padding: 20px;
+    }
+	
+	main form .flex {
+		display: block;
+	}
+	
+	main form textarea {
+		margin-right: 0px;
+	}
+}
+
+/* entre 601px et 1000px */
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+	html {
+		font-size: 80%;
+	}
+    .MenuNavigation a {
+        font-size: 16px;
+        padding: 0 5%;
+    }
+
+    .TextBlock1, .TextBlock2 {
+        font-size: 24px;
+    }
+
+    .Collection a {
+        flex: 1 0 33%;
+        margin: 5px;
+    }
+}
+
+/* entre 35px et 600px */
+@media only screen and (min-width: 350px) and (max-width: 600px) {
+	html {
+		font-size: 60%;
+	}
+}

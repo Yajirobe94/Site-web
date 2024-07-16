@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+*{
+	margin  : 0;
+	padding : 0;
+}
+
+@font-face {
+    font-family: "Text";
+    src: url("../Fonts/Univers\ LT\ Std\ 67\ Bold\ Condensed.otf");
+}
+@font-face {
+    font-family: "Sloagan";
+    src: url("../Fonts/Univers\ LT\ Std\ 63\ Bold\ Extended\ Oblique.otf");
+}
+
+body {
+  margin: 0;
+  background-color: #e2e2dc;
+  font-family: 'Text', sans-serif;
+}
+
+header{
+	background-color : white;		
+	text-align : left;	
+}
+
+/* ////// MENU NAVIGATION \\\\\\\ */
+
+.MenuNavigation{
+	color: black;
+	display:flex;
+	position: relative;
+	height: 100px;
+    font-size: 100%;
+}
+
+.NavFirstChild{
+	border-left: 1px solid grey;
+}
+
+.MenuNavigation a:not(.logoHref) {
+	border-right: 1px solid grey;
+	display: flex;
+	align-items: center;
+	padding: 0% 9.37% 0% 9.37%;
+	transition: background-color .2s ease-in-out,box-shadow 0.5s;
+	color: black;
+	text-decoration: none;
+}
+
+.logoImg {
+	height: 100%;
+}
+
+.MenuNavigation a:hover{
+	box-shadow: 2px 2px 10px black;
+	background-color: #ECECEC;
+}
+
+/* ////// IMAGE AVEC TITRE \\\\\\\ */
+
+.ImageMenu {
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../Images/menu.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 50%;
+	padding: 11%;
+}
+
+.TextBlock1 {
+  position: absolute;
+  font-size: 300%;
+  bottom: 50%;
+  right: 57%;
+  background-color: black;
+  color: white;
+  padding: 0.25% 0.5% 0.25% 0.5%;
+}
+
+.TextBlock2 {
+  position: absolute;
+  font-size: 175%;
+  bottom: 35%;
+  right: 82.5%;
+  background-color: white;
+  color: black;
+  padding: 0.25% 0.5% 0.25% 0.5%;
+  border-radius : 1rem;
+  font-family: 'Slogan', sans-serif;
+}
+
+/* ////// CONTENU CENTRALE \\\\\\\ */
+
+main {
+	text-align : center;
+}
+
+/* ////// css formulaire \\\\\\\ */
+main form {
+	background-color:#eee;
+	margin: 1rem;
+	padding : 1rem;
+	border-radius : 0.5rem;
+}
+main form label{
+	margin-top : 1.5rem;
+	display : inline-block;
+	width : 40%;
+	font-weight : bold;
+}
+main form input, main form select{
+	display : inline-block;
+	width : 80%;
+	margin-left : 15%;
+}
+main form input[type=file]{
+	width : 50%;
+	background-color:#ddd;
+}
+main form input[type=checkbox]{
+	width : 20px;
+	margin-left:0;
+}
+main form input[type=checkbox] + label{
+	display : inline-block;
+	width : 25%;
+}
+
+main form fieldset{
+	border-radius : 0.5rem;
+	padding : 0.5rem 0.5rem 0.5rem 2.5rem ;
+}
+main form fieldset legend{
+	margin-left : -1.5rem;
+	background-color:#ddd;
+	padding : 0.2rem 0.8rem;
+	border-radius : 0.5rem;
+	font-weight : bold;
+}
+main form fieldset input[type=radio]{
+	width : 5%;
+	margin-left : 0;
+}
+main form fieldset label{
+	margin-top : 0rem;
+	width : 90%;
+	margin-left : 0;
+	font-weight : normal;
+}
+
+main form input[type=submit],main form input[type=reset]{
+	width : 30%;
+	height : 2rem;
+	margin: 20px 8% 0 8%;
+	font-weight : bold;
+	border : 2px solid black;
+	border-radius : 0.5rem;
+}
+ 
+main form textarea{
+	margin-right: -100px;
+	
+}
+main form .flex {
+	display:flex;
+	align-items: center;
+}
+
+/* ////// BAS DE PAGE \\\\\\\ */
+
+footer {
+	background-color : black;
+	color: white;
+	padding: 2%;
+}
+
+.infos{
+	
+	display: flex;
+	justify-content: space-around;
+}
+
+.infos div{
+	
+	padding: 0% 10% 0% 10%;
+}
+
+.infos h4{
+	
+	font-size: 125%;
+}
